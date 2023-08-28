@@ -1,0 +1,8 @@
+@import "_breakpoints";
+@import "_colors";
+@import "_mixin";
+@import "_reset";
+* {
+    font-family: "Dosis";
+    color: $text;
+}
