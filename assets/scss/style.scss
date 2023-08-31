@@ -2,7 +2,26 @@
 @import "_colors";
 @import "_mixin";
 @import "_reset";
+body {
+    overflow-x: hidden;
+}
+
 * {
     font-family: "Dosis";
     color: $text;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    @include breakpoint(md) {
+        width: 90%;
+    }
+    @include breakpoint(lg) {
+        width: 85%;
+    }
+    @include breakpoint(full) {
+        width: 100%;
+        max-width: 1320px;
+    }
 }
